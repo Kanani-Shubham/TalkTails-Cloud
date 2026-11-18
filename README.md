@@ -68,7 +68,7 @@ TalkTails transforms language learning from static memorization into dynamic, re
 
 ## 5. Application Screenshots
 
-### 5.1 Complete Mobile App Experience Showcase (12 Screens)
+### 5.1 Complete Mobile App Experience (12 Screens)
 
 ![TalkTails Mobile App Screens Infographic](screenshots/00-talktails-app-screens-infographic.png)
 *Figure 1: Complete TalkTails mobile application workflow featuring 12 primary application modules across navigation, AI assistance, 3D companion customization, and cloud synchronization.*
@@ -90,35 +90,15 @@ TalkTails transforms language learning from static memorization into dynamic, re
 
 ---
 
-### 5.2 Live Android Floating Companion
-<div align="center">
-  <img src="screenshots/02-talktails-android-app.png" alt="TalkTails Android Floating Companion" width="420" />
-  <p><em>Figure 2: TalkTails floating 3D companion (Maru) running live on Android, demonstrating native Gujarati-to-English speech translation ("મારું નામ શુભમ છે"), pronunciation playback, and text input over the home launcher.</em></p>
-</div>
+### 5.2 Cloud Platform & Application Gallery (2×2 Box Grid)
 
----
-
-### 5.3 Cloud Backend Compute (Render Dashboard)
-![Render Cloud Deployment Dashboard](screenshots/01-render-deployment.png)
-*Figure 3: Render Web Services deployment dashboard confirming live automated continuous deployment of the FastAPI backend service (`lingoboop-ai`) from commit `541486e`.*
-
----
-
-### 5.4 Cloud Database & Infrastructure Health (Supabase)
-![Supabase Project Health Dashboard](screenshots/03-supabase-project-health.png)
-*Figure 4: Supabase Cloud Console exhibiting 100% healthy operational status across Database, PostgREST API, Authentication, Realtime, and Storage on Nano compute in the South Asia (Mumbai) region.*
-
-![Supabase PostgreSQL Profiles Database](screenshots/04-supabase-database.png)
-*Figure 5: Supabase PostgreSQL database table editor displaying user profiles, relational data tables, and active Row Level Security (RLS) policies.*
-
----
-
-### 5.5 Cloud Object Storage (Supabase CDN Buckets)
-![Supabase Storage Buckets](screenshots/05-supabase-storage-buckets.png)
-*Figure 6: Supabase Storage bucket management dashboard displaying public CDN bucket `email-assets` configured with 5 MB file size constraints and image MIME validation.*
-
-![Supabase Stored Asset Preview](screenshots/06-supabase-storage-file-preview.png)
-*Figure 7: Supabase Storage file preview inspector serving cloud-hosted character art and notification assets (`pano_password_reset.jpg`).*
+| 🚀 Cloud Compute (Render) | 📱 Live Android Companion |
+|:---:|:---:|
+| [![Render Deployment](screenshots/01-render-deployment.png)](screenshots/01-render-deployment.png)<br><sub>**Figure 2:** Render Web Service continuous deployment dashboard (`lingoboop-ai`) from commit `541486e`</sub> | [![Android Companion](screenshots/02-talktails-android-app.png)](screenshots/02-talktails-android-app.png)<br><sub>**Figure 3:** Live Android floating companion (*Maru*) with real-time speech translation ("મારું નામ શુભમ છે")</sub> |
+| **🏥 Supabase Project Health** | **🗄️ Supabase Relational Database** |
+| [![Supabase Health](screenshots/03-supabase-project-health.png)](screenshots/03-supabase-project-health.png)<br><sub>**Figure 4:** 100% operational health across Database, PostgREST API, Auth, Realtime, and Storage</sub> | [![Supabase Database](screenshots/04-supabase-database.png)](screenshots/04-supabase-database.png)<br><sub>**Figure 5:** PostgreSQL database schema displaying `profiles` with active Row Level Security (RLS)</sub> |
+| **📦 Cloud Storage Buckets** | **🔍 Stored File Preview Inspector** |
+| [![Storage Buckets](screenshots/05-supabase-storage-buckets.png)](screenshots/05-supabase-storage-buckets.png)<br><sub>**Figure 6:** Supabase public CDN bucket (`email-assets`) configured with 5 MB file size constraints</sub> | [![Storage Preview](screenshots/06-supabase-storage-file-preview.png)](screenshots/06-supabase-storage-file-preview.png)<br><sub>**Figure 7:** Supabase Storage file preview inspector serving cloud-hosted asset (`pano_password_reset.jpg`)</sub> |
 
 ---
 
