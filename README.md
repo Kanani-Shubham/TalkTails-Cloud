@@ -68,33 +68,57 @@ TalkTails transforms language learning from static memorization into dynamic, re
 
 ## 5. Application Screenshots
 
-### 5.1 Mobile Application in Action
-![TalkTails Android Floating Companion](screenshots/02-talktails-android-app.png)
-*Figure 1: TalkTails floating 3D companion (Maru) live on Android, showcasing real-time Gujarati-to-English translation ("મારું નામ શુભમ છે"), pronunciation playback controls, and text input.*
+### 5.1 Complete Mobile App Experience Showcase (12 Screens)
+
+![TalkTails Mobile App Screens Infographic](screenshots/00-talktails-app-screens-infographic.png)
+*Figure 1: Complete TalkTails mobile application workflow featuring 12 primary application modules across navigation, AI assistance, 3D companion customization, and cloud synchronization.*
+
+| Screen # | Module Name | Key Functionality |
+|:---:|---|---|
+| **01** | **Splash Screen** | Animated mascot welcome, brand introduction (*Learn • Practice • Translate*), and initial authentication entry. |
+| **02** | **Home — Practice** | Daily speech practice goals (e.g., 0.0/10 min), quick practice prompts (*Directions*, *Refreshments*, *Introductions*), and microphone trigger. |
+| **03** | **Floating Translation** | Native Android floating overlay (`WindowManager`) presenting real-time translation with pronunciation audio and replay controls. |
+| **04** | **AI Reasoning** | Multi-lingual reasoning view driven by Groq Cloud (`openai/gpt-oss-120b`) explaining syntax rules and linguistic nuances. |
+| **05** | **Learning Progress** | Spaced repetition vocabulary dashboard tracking *Words Learned*, *Mastered*, and *To Review*. |
+| **06** | **Achievements** | Gamified milestone badges (*First Word*, *Consistency Star*, *Pronunciation Pro*, *Weekly Warrior*) synchronized with cloud state. |
+| **07** | **My Profile** | Account overview, active companion display, daily speech quota consumption tracker, and tier status. |
+| **08** | **Choose Your Buddy** | 3D pet companion selection carousel showcasing personality descriptions and animation models (e.g. *Maru the Fox*). |
+| **09** | **Buddy Details** | Detailed companion preview with character-specific traits, accent styles, and one-tap adoption. |
+| **10** | **Conversation History** | Historical bilingual transcripts (`gu-IN` ↔ `en-US`, `hi-IN` ↔ `fr-FR`) with one-tap *Practice Again* audio replay. |
+| **11** | **Settings — Voice & Audio** | Floating companion permissions toggle, preview language selector, and neural voice picker (*Shivani*, *Chetana*, *Kalpana*, *Lakshmi*). |
+| **12** | **Subscription & Plans** | Entitlements and tier upgrade options (*Free*, *Monthly ₹9*, *Yearly ₹49*) for expanded speech quotas and advanced AI models. |
 
 ---
 
-### 5.2 Cloud Backend & Deployment
+### 5.2 Live Android Floating Companion
+<div align="center">
+  <img src="screenshots/02-talktails-android-app.png" alt="TalkTails Android Floating Companion" width="420" />
+  <p><em>Figure 2: TalkTails floating 3D companion (Maru) running live on Android, demonstrating native Gujarati-to-English speech translation ("મારું નામ શુભમ છે"), pronunciation playback, and text input over the home launcher.</em></p>
+</div>
+
+---
+
+### 5.3 Cloud Backend Compute (Render Dashboard)
 ![Render Cloud Deployment Dashboard](screenshots/01-render-deployment.png)
-*Figure 2: Render Web Services deployment dashboard confirming live continuous deployment of the FastAPI backend (`lingoboop-ai`) from commit `541486e`.*
+*Figure 3: Render Web Services deployment dashboard confirming live automated continuous deployment of the FastAPI backend service (`lingoboop-ai`) from commit `541486e`.*
 
 ---
 
-### 5.3 Database & Cloud Health
+### 5.4 Cloud Database & Infrastructure Health (Supabase)
 ![Supabase Project Health Dashboard](screenshots/03-supabase-project-health.png)
-*Figure 3: Supabase Cloud Console exhibiting healthy status across Database, PostgREST API, Authentication, Realtime, and Storage on Nano compute in the South Asia (Mumbai) region.*
+*Figure 4: Supabase Cloud Console exhibiting 100% healthy operational status across Database, PostgREST API, Authentication, Realtime, and Storage on Nano compute in the South Asia (Mumbai) region.*
 
 ![Supabase PostgreSQL Profiles Database](screenshots/04-supabase-database.png)
-*Figure 4: Supabase PostgreSQL database table editor displaying user profiles, relational tables, and active Row Level Security (RLS) policies.*
+*Figure 5: Supabase PostgreSQL database table editor displaying user profiles, relational data tables, and active Row Level Security (RLS) policies.*
 
 ---
 
-### 5.4 Cloud Object Storage
+### 5.5 Cloud Object Storage (Supabase CDN Buckets)
 ![Supabase Storage Buckets](screenshots/05-supabase-storage-buckets.png)
-*Figure 5: Supabase Storage bucket management dashboard displaying public CDN bucket `email-assets` configured with 5 MB file size constraints and image MIME validation.*
+*Figure 6: Supabase Storage bucket management dashboard displaying public CDN bucket `email-assets` configured with 5 MB file size constraints and image MIME validation.*
 
 ![Supabase Stored Asset Preview](screenshots/06-supabase-storage-file-preview.png)
-*Figure 6: Supabase Storage file preview inspector serving cloud-hosted character and notification assets (`pano_password_reset.jpg`).*
+*Figure 7: Supabase Storage file preview inspector serving cloud-hosted character art and notification assets (`pano_password_reset.jpg`).*
 
 ---
 
@@ -472,6 +496,7 @@ TalkTails-Cloud/
 ├── analysis_options.yaml                  # Dart analyzer & linter rules
 │
 ├── screenshots/                           # Standardized project verification screenshots
+│   ├── 00-talktails-app-screens-infographic.png # Complete 12-screen mobile app infographic
 │   ├── 01-render-deployment.png           # Render Web Service dashboard
 │   ├── 02-talktails-android-app.png       # Live Android floating companion
 │   ├── 03-supabase-project-health.png     # Supabase health & infrastructure status
